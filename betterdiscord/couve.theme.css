@@ -1,9 +1,8 @@
 /**
- * @name Couve
- * @author A user#8169, Nyria#3863
- * @description A new look to discord
- * @invite rtBQX5D3bD
- * @version 2.1
+ * @name Couve-Improved
+ * @author Platformer22#7091
+ * @description Couve but better.
+ * @version 2.0
 */
 
 @import url("https://nyri4.github.io/Couve/betterdiscord/app.css");
@@ -12,26 +11,24 @@
 :root {
     
     /* Colors */
-    --main-color: #419e85;
+    --main-color: #5865F2;
 
     /* Borders */
-    --avatar-radius: 8px;
+    --avatar-radius: 5px;
 }
 
 /* Dark/Light vars */
 .theme-dark {
 
     /* BGs */
-    --background-primary: #252a3e;
-    --background-secondary: #1e2337;
-    --background-secondary-alt: #1c2438;
+    --background-primary: #272727;
+    --background-secondary: #1c1c1c;
+    --background-secondary-alt: #0000;
     --background-secondary-alt-alt: #1b1d31;
-    --background-tertiary: #060c24;
-
+    --background-tertiary: #090909;
+    
     --deprecated-store-bg: var(--background-primary);
     --background-floating: var(--background-secondary);
-    --background-mobile-primary: var(--background-primary);
-    --activity-card-background: var(--background-secondary);
 
     --colortransparency: #0003;
 
@@ -41,9 +38,6 @@
     /* Other stuff */
     --textcolor: #fff;
     --epicshadow1: #fff3;
-
-    /* Font */
-    --font-display: var(--font-primary) !important;
 }
 
 .theme-light {
@@ -54,11 +48,6 @@
     --background-secondary-alt: #fff;
     --background-secondary-alt-alt: #eee;
     --background-tertiary: #fff;
-
-    --deprecated-store-bg: var(--background-primary);
-    --background-floating: var(--background-secondary);
-    --background-mobile-primary: var(--background-primary);
-    --activity-card-background: var(--background-secondary);
     
     --colortransparency: #0001;
 
