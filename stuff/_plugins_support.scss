@@ -1,0 +1,133 @@
+:root {
+
+// Powercord toast
+.powercord-toast {
+    background: var(--background-secondary);
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 7px;
+    border: unset;
+    transition: all 200ms;
+    overflow: hidden;
+    padding-left: 6px;
+    box-shadow: 0 0 20px 0 #111;
+  
+    .header {
+      background: transparent;
+      box-shadow: unset;
+    }
+  
+    .icon::before {
+      content: "";
+      position: absolute;
+      left:0;
+      top:0;
+      height: 100%;
+      width: 8px;
+      background: currentColor;
+      opacity: 1;
+      z-index: -1;
+      pointer-events: none;
+    }
+  
+    &[data-toast-type=info] .icon { color: #419e85;}
+  
+    .contents .inner {
+      background: var(--background-primary);
+      border:none;
+    }
+  
+    .progress-2XXRYo {
+      width: calc(100% - 6px);
+      position: absolute;
+      right: 0;
+      top:0;
+      z-index: -1;
+      background: transparent !important;
+      border-radius: 0;
+  
+      .progressBar-3u8FBM {
+          opacity: .2;
+          height: 100%;
+      }
+    }
+}
+
+// date thingies - BetterDiscord
+.creationDate-CJwdKT,
+.joinedAtDate-IawR02,
+.lastMessageDate-ocEw13 {
+    position: fixed !important;
+}
+
+.creationDate-CJwdKT { top: -70px; }
+.joinedAtDate-IawR02 { top: -50px;}
+.lastMessageDate-ocEw13 { top: -30px; margin-top: 0;}
+
+// User Details - Powercord
+.root-3QyAh1 .header-4zuFdR .user-details-text {
+  position: fixed;
+    top: -70px;  
+    left: 0; right: unset;
+    width: 800px;
+}
+
+// CustomStatusPresets
+.scale-3iLZhb.didRender-33z1u8 { transform: scale(1) !important;}
+
+#status-picker.menu-3sdvDG #status-picker-custom-status {
+    .labelContainer-1BLJti { padding: 0 16px;}
+
+    & + .layer-v9HyYc { 
+        top: 432px !important;
+        left: 359px !important;
+
+        .submenu-2-ysNh { 
+            background: var(--background-tertiary);
+            border-radius: 0 8px 8px 0;
+        }
+    }
+}
+
+// Game Activity Toggle - Powercord
+.panels-j1Uci_ > .container-3baos1 .button-14-BFJ[aria-label="Hide Game Activity"]
+  {
+    &::before {
+    position: fixed; content: "Switch Game Activity to status picker";
+    display: flex; justify-content: center; align-items: center;
+    left: 90px; bottom: 72px;
+    width: 240px; height: 52px;
+    background: var(--background-secondary);
+  }
+
+  & > div { display: none;}
+}
+
+// Game Activity Toggle - BetterDiscord - Thanks DevilBro
+.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5 > button:not([role="switch"]):first-child {
+  color: var(--main-color);
+
+  & + button:nth-child(2) { margin-left: 32px;}
+} 
+
+// MemberCount
+#MemberCount {
+  top: 48px;
+
+  .membersGroup-v9BXpm { margin-top: 0; padding: 18px 8px 0 16px;}
+
+  & + .members-1998pB { margin-top: 0; padding-top: 70px;}
+}
+
+// Status weird behavior with BetterDiscord
+.mask-1l8v16 > svg > mask > :not(:first-child) { display: none;}
+
+// BDFDB notifications
+.notice-3bPHh-[id] { 
+  margin: -30px 240px 0px 90px; 
+  border-radius: 8px 8px 0 0 !important;
+
+  & ~ .layers-3iHuyZ .sidebar-2K8pFh { border-radius: 0;}
+}
+
+}
