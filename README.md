@@ -1,6 +1,6 @@
 # Couve-Improved
 
-Full Credit to [NYRI4](https://github.com/NYRI4) for their theme as they are the original creator of this theme.
+Full credit to [NYRI4](https://github.com/NYRI4) for their theme as they are the original creator of this theme.
 
 I just simply changed around the Discord Theme by changing colours to make it like Discord UI V2 if you like.
 
